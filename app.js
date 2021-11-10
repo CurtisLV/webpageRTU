@@ -9,7 +9,7 @@ const addNewJoke = async () => {
     }
     if (jokeCount > 10) {
         window.alert(
-            'Atļaušu izdrukāt tikai desmit jokus! PS. Ja ātri spiež, es dažreiz lagoju.'
+            'Atļaušu izdrukāt tikai desmit jokus! \nPS. Ja ātri spiež, es dažreiz lagoju.'
         );
     } else {
         try {
