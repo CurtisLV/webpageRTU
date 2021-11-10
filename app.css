@@ -1,0 +1,73 @@
+html {
+    scroll-behavior: smooth !important;
+}
+body {
+    background-color: #f1faee;
+    color: #457b9d;
+}
+
+.card {
+    align-items: center;
+    max-width: 18rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.card-body {
+    border-left: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+#blog-h2 {
+    text-align: center;
+}
+
+a:link {
+    color: #457b9d;
+}
+
+a:visited {
+    color: #457b9d;
+}
+a:hover {
+    color: hotpink;
+}
+
+#carousel .carousel-item img {
+    object-fit: cover;
+    object-position: center;
+    height: 75vh;
+}
+
+/* Lai sadaļas ir zem fixed navbar */
+:target::before {
+    content: '';
+    display: block;
+    height: 60px; /* fixed header height*/
+    margin: -60px 0 0; /* negative fixed header height */
+}
+
+#btnForma {
+    margin-bottom: 20px !important;
+    padding-bottom: 20px;
+}
+
+/* 
+#carousel {
+    max-width: 600px !important;
+    max-height: 600px !important;
+    align: center;
+} */
+
+/* .carousel .carousel-item {
+    height: 500px;
+}
+
+.carousel-item img {
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    min-height: 500px;
+} */
