@@ -17,7 +17,7 @@
 
 <body>
 
-    <nav class="navbar sticky-top navbar-expand-md navbar-light bg-light">
+    <nav class="navbar sticky-top navbar-expand-sm navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><i class="bi bi-check2-square"></i> KM</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -31,7 +31,7 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
 
-                    <li class="nav-item">
+
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#blog">Blogs</a>
                     </li>
@@ -49,10 +49,23 @@
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="#form">Forma</a></li>
                             <li><a class="dropdown-item" href="#api">Tabula/API piemērs</a></li>
-                            <!---disable link until form is filled-->
                             <li><a class="dropdown-item" href="#imgs">Bilžu rāmītis</a></li>
                         </ul>
                     </li>
+                    <div class="d-flex">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Izvēlies valodu
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown" id="langSelect">
+                                <li><a class="dropdown-item" href="#"><img src="Pics/latvia.png" alt="Latviešu">
+                                        Latviešu</a></li>
+                                <li><a class="dropdown-item" href="#"><img src="Pics/sweden.png" alt="Swedish">
+                                        Swedish</a></li>
+                            </ul>
+                        </li>
+                    </div>
                 </ul>
             </div>
         </div>
@@ -61,7 +74,7 @@
     <div id="blog" class="container">
         <h2 class="display-5" id="blog-h2">Blog about <a href="https://en.wikipedia.org/wiki/Silkie"
                 target="_blank">Silkie</a> chickens</h1>
-            <div class="card-group justify-content-evenly">
+            <div class="card-group justify-content-evenly" align="center">
                 <div class="card text-center">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Silky_bantam.jpg/330px-Silky_bantam.jpg"
                         class="card-img-top img-fluid" alt="...">
@@ -99,13 +112,14 @@
                     </div>
                 </div>
             </div>
+            <hr>
     </div>
 
-    <hr>
 
-    <div id="form" class="container col-xs-1" class="" align="center">
+
+    <div class="container col-xs-1" class="" align="center">
         <h2 class="display-5">Ievades forma</h1>
-            <form action="#nowhere">
+            <form action="" id="form">
                 <div class="form-row ">
                     <div class="form-group col-lg-8">
                         <label for="email">Email</label>
@@ -118,19 +132,20 @@
                     </div>
                 </div>
                 <br>
-                <button type="submit" class="btn btn-secondary" id="btnForm">Submit</button>
+                <button type="submit" class="btn btn-secondary" id="btnForm">Submit to unhide API!</button>
             </form>
+            <hr>
     </div>
 
     <br>
 
-    <div class="container" id="api">
+    <div class="container hidden" id="api">
         <div class="d-grid gap-2 col-6 mx-auto">
             <button class="btn btn-danger" type="button" id="btnNewJoke">New Dad Joke</button>
             <button class="btn btn-warning" type="button" id="btnRemoveJokes">Remove jokes</button>
         </div>
 
-        <table class="table table-hover table-striped table-responsive-xl">
+        <table class="table table-hover table-responsive-xl">
             <thead>
                 <tr>
                     <th scope="col">#</th>

@@ -8,7 +8,9 @@ const addNewJoke = async () => {
         window.alert('Click on table rows to randomize their looks!');
     }
     if (jokeCount > 10) {
-        window.alert('Atļaušu izdrukāt tikai desmit jokus!');
+        window.alert(
+            'Atļaušu izdrukāt tikai desmit jokus! PS. Ja ātri spiež, es dažreiz lagoju.'
+        );
     } else {
         try {
             const jokeText = await getDadJoke();
@@ -71,3 +73,23 @@ function deleteAll() {
     tableRows.innerHTML = '';
     jokeCount = 1;
 }
+
+const form = document.querySelector('#form');
+const api = document.querySelector('#api');
+
+form.addEventListener('submit', function (e) {
+    e.preventDefault;
+    api.classList.toggle('hidden');
+
+    window.setTimeout(function () {
+        form.scrollIntoView();
+    }, 5);
+});
+
+const languages = document.querySelectorAll('#langSelect > li');
+
+languages.forEach(function (e) {
+    e.addEventListener('click', () => {
+        window.alert('Valoda nav nomainīta. Paldies par centību!');
+    });
+});

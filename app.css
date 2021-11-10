@@ -53,6 +53,10 @@ a:hover {
     padding-bottom: 20px;
 }
 
+.hidden {
+    display: none !important;
+}
+
 /* 
 #carousel {
     max-width: 600px !important;
