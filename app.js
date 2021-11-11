@@ -9,7 +9,7 @@ const addNewJoke = async () => {
     }
     if (jokeCount > 10) {
         window.alert(
-            'Atļaušu izdrukāt tikai desmit jokus! \nPS. Ja ātri spiež, es dažreiz lagoju.'
+            'Atļaušu izdrukāt tikai desmit jokus! \nPS. Ja ātri spiež, es dažreiz lagoju un iedodu vairāk rezultātus.'
         );
     } else {
         try {
@@ -74,22 +74,21 @@ function deleteAll() {
     jokeCount = 1;
 }
 
-const form = document.querySelector('#form');
-const api = document.querySelector('#api');
-
-form.addEventListener('submit', function (e) {
-    e.preventDefault;
-    api.classList.toggle('hidden');
-
-    window.setTimeout(function () {
-        form.scrollIntoView();
-    }, 5);
-});
-
 const languages = document.querySelectorAll('#langSelect > li');
 
 languages.forEach(function (e) {
     e.addEventListener('click', () => {
         window.alert('Valoda nav nomainīta. Paldies par centību!');
     });
+});
+
+const form = document.querySelector('#form');
+const api = document.querySelector('#api');
+
+form.addEventListener('submit', function (e) {
+    e.preventDefault;
+    api.classList.toggle('hidden');
+    window.setTimeout(function () {
+        form.scrollIntoView();
+    }, 50);
 });
