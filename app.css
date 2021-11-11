@@ -5,6 +5,17 @@ body {
     background-color: #f1faee;
     color: #457b9d;
 }
+div {
+    cursor: url('Pics/hen24.png'), auto !important;
+}
+
+h2 {
+    color: #1d3557;
+}
+
+.fab {
+    color: #e63946;
+}
 
 .card {
     align-items: center;
@@ -24,11 +35,11 @@ a {
 }
 
 a:link {
-    color: #457b9d;
+    color: #1d3557;
 }
 
 a:visited {
-    color: #457b9d;
+    color: #1d3557;
 }
 a:hover {
     color: hotpink;
